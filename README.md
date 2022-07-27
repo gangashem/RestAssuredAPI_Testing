@@ -13,7 +13,7 @@ Locate the project from where you saved it on your local machine and open it
 
 If any errors, Resolve the dependencies on the pom.xml file.
 
-Right click on the "TestRunner" class and then click Run 'TestRunner'
+Open the cucumber > Options package and right click on the "TestRunner" class and then click Run 'TestRunner'
 
 
 
