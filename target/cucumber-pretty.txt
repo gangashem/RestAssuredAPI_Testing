@@ -1,0 +1,11 @@
+@UserEmailValidation_Feature
+Feature: User email validation
+
+  @EmailValidation_Scenario @Regression
+  Scenario: Verify if the emails in the comment section are in proper format           [90m# src/test/java/feature/emailValidations.feature:4[0m
+    [32mGiven [0m[32mSearch for user with username "[0m[32m[1mgetDelphineAPI[0m[32m" with "[0m[32m[1mGET[0m[32m" http request[0m       [90m# emailValidations.searchForUserWithUsernameWithHttpRequest(String,String)[0m
+    [32mWhen [0m[32mSearch for post written by "[0m[32m[1mgetUsername[0m[32m" with "[0m[32m[1mGET[0m[32m" http request[0m              [90m# emailValidations.searchForPostWrittenByWithHttpRequest(String,String)[0m
+    [32mThen [0m[32mFetch the comments for each "[0m[32m[1mgetUserPostsAPI[0m[32m" with "[0m[32m[1mGET[0m[32m" http request[0m         [90m# emailValidations.fetchTheCommentsForEachWithHttpRequest(String,String)[0m
+    [32mAnd [0m[32mGet all "[0m[32m[1mgetCommentsAPI[0m[32m" for each user post with "[0m[32m[1mGET[0m[32m" http request[0m            [90m# emailValidations.getAllForEachUserPostWithHttpRequest(String,String)[0m
+    [32mWhen [0m[32mValidate if the "[0m[32m[1memails[0m[32m" in comment section are in the proper email "[0m[32m[1mformat[0m[32m".[0m [90m# emailValidations.validateIfTheInCommentSectionAreInTheProperEmail(String,String)[0m
+    [32mThen [0m[32mthe API call is success with status code [0m[32m[1m200[0m                                  [90m# emailValidations.the_api_call_is_success_with_status_code(Integer)[0m
